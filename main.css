@@ -1,0 +1,559 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap");
+:root {
+  --primary-color: red;
+}
+
+body {
+  background: #ffffff;
+  margin: 0;
+  font-family: "Roboto";
+  overflow-x: hidden;
+}
+
+.navbar {
+  background: white;
+  padding: 1em;
+}
+.navbar .logo {
+  text-decoration: none;
+  font-weight: bold;
+  color: #48a3ff;
+  font-size: 1.2em;
+}
+.navbar .logo span {
+  color: var(--primary-color);
+}
+.navbar nav {
+  display: none;
+}
+.navbar .container {
+  display: flex;
+  place-content: space-between;
+}
+.navbar .mobile-menu {
+  cursor: pointer;
+}
+
+a {
+  color: #48a3ff;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(bilder/IMG_2665.jpg);
+  background-repeat: no-repeat;
+  background-attachment: local;
+  background-position: center;
+  background-size: cover;
+  background-color: #002d4b;
+  position: relative;
+  padding-bottom: 10em;
+  padding-top: 10em;
+}
+.hero h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  line-height: 1.8;
+  font-weight: bold;
+  font-family: "Roboto";
+  text-align: center;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.color-blue {
+  background-color: #f7f7f7;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 3em;
+  row-gap: 3em;
+  margin-top: 1em;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0.5em;
+  height: auto;
+  max-width: 1080px;
+  grid-template-areas: "text-ett" "bild-ett" "text-tva" "bild-tva";
+}
+
+#text-ett {
+  grid-area: text-ett;
+  border-radius: 5px;
+  background-color: #ffffff;
+  font-size: 1em;
+  text-align: center;
+  align-items: center;
+  color: #002d4b;
+  padding: 1em;
+}
+
+#text-ett h3 {
+  color: #002d4b;
+  font-size: 2em;
+}
+
+#bild-ett {
+  grid-area: bild-ett;
+  border-radius: 3px;
+  background-image: url(/bilder/varmdo_1.JPG);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#text-tva {
+  grid-area: text-tva;
+  border-radius: 5px;
+  background-color: #ffffff;
+  text-align: center;
+  align-items: center;
+  color: #002d4b;
+  padding: 1em;
+}
+
+#text-tva h3 {
+  color: #002d4b;
+  font-size: 2em;
+}
+
+#bild-tva {
+  grid-area: bild-tva;
+  border-radius: 3px;
+  background-image: url(/bilder/varmdo_2.JPG);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/*FOOTERN*/
+footer {
+  display: block;
+  font-size: 1em;
+  text-align: center;
+  background-color: white;
+  color: #002d4b;
+  margin-top: 3em;
+}
+footer a {
+  line-height: 2em;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 66%;
+  right: 0;
+  top: 0;
+  background: #002d4b;
+  height: 100vh;
+  padding: 1em;
+}
+nav ul.primary-nav {
+  margin-top: 5em;
+}
+nav li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.5em;
+  font-size: 1.3em;
+  text-align: right;
+}
+nav li a:hover {
+  font-weight: bold;
+}
+
+.mobile-menu-exit {
+  float: right;
+  margin: 0.5em;
+  cursor: pointer;
+}
+
+.omoss-section {
+  background-color: #f7f7f7;
+  background-image: url(bilder/varmdo_1.JPG);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  color: #002d4b;
+  text-align: center;
+  height: 55vh;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  padding-bottom: 25em;
+}
+.omoss-section .wraparound {
+  flex-direction: column;
+  background-color: #ffffff;
+  margin: auto;
+  margin-bottom: 5em;
+  padding: 3em;
+  max-width: 1080px;
+}
+.omoss-section .omossbeskrivning {
+  color: #002d4b;
+  text-align: center;
+  max-width: 65%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 800;
+}
+
+.bakgrundsfärg {
+  background-color: #f7f7f7;
+  margin-bottom: 3em;
+}
+
+.section-heading {
+  color: #002d4b;
+  text-align: center;
+}
+
+.p-heading {
+  text-align: center;
+  color: #002d4b;
+  line-height: 170%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tjänster-grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 3em;
+  row-gap: 3em;
+  margin-top: 1em;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 1em;
+  height: auto;
+  max-width: 1080px;
+  grid-template-areas: "tjänst-ett tjänst-ett tjänst-ett tjänst-ett" "tjänst-tva tjänst-tva tjänst-tva tjänst-tva" "tjänst-tre tjänst-tre tjänst-tre tjänst-tre";
+}
+
+#tjänst-ett {
+  grid-area: tjänst-ett;
+  border-radius: 3px;
+  background-color: #ffffff;
+  text-align: center;
+  align-items: center;
+  padding-top: 2em;
+  color: #002d4b;
+  padding: 3em;
+}
+
+#tjänst-tva {
+  grid-area: tjänst-tva;
+  border-radius: 3px;
+  background-color: #ffffff;
+  text-align: center;
+  align-items: center;
+  padding-top: 2em;
+  color: #002d4b;
+  padding: 3em;
+}
+
+#tjänst-tre {
+  grid-area: tjänst-tre;
+  border-radius: 3px;
+  background-color: #ffffff;
+  text-align: center;
+  align-items: center;
+  padding-top: 2em;
+  color: #002d4b;
+  padding: 3em;
+}
+
+.pågående-project {
+  background-color: #002d4b;
+}
+.pågående-project h3 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.5em;
+}
+.pågående-project p {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1em;
+}
+.pågående-project .pagaende_1, .pågående-project .pagaende_2, .pågående-project .pagaende_3 {
+  max-width: 50em;
+  height: 50%;
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+.pågående-project .pagaende_1 {
+  transform: rotate(90deg);
+  margin-bottom: 9em;
+}
+
+.kontakta-oss {
+  background-color: #f7f7f7;
+  color: #002d4b;
+  text-align: center;
+}
+
+#overlay {
+  width: 100%;
+  height: 100%;
+  background-color: #f7f7f7;
+  margin-bottom: 200px;
+}
+
+form {
+  max-width: 550px;
+  width: 90%;
+  background: white;
+  margin: 17vh auto 0 auto;
+  padding: 40px;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.h1contact {
+  margin: 0;
+  text-align: center;
+}
+
+.p-contact {
+  margin: 0;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin: 20px 0;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  outline: none;
+  resize: none;
+  border: none;
+  border-bottom: 1px solid #d4d1d1;
+}
+
+input[type=text]:focus,
+textarea:focus {
+  border-bottom: 1px solid #002d4b;
+}
+
+textarea::-webkit-scrollbar {
+  width: 4px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: #002d4b;
+}
+
+.center {
+  text-align: center;
+}
+
+input[type=submit] {
+  margin-top: 30px;
+  width: 90%;
+  max-width: 200px;
+  background: #002d4b;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.error {
+  color: red;
+}
+
+.error-border {
+  border-bottom: 1px solid red;
+}
+
+#Skickat {
+  color: #002d4b;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu,
+.mobile-menu-exit {
+    display: none;
+  }
+  .navbar .container {
+    display: grid;
+    grid-template-columns: 180px auto;
+  }
+  .navbar nav {
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+    margin: 1px;
+  }
+  .navbar nav ul {
+    display: flex;
+  }
+  .navbar nav a {
+    color: #002d4b;
+    font-size: 1em;
+    padding: 0.1em 1em;
+  }
+  .navbar nav ul.primary-nav {
+    margin: 0;
+    margin-right: 1em;
+  }
+  .navbar nav li.current a {
+    font-weight: bold;
+  }
+  .navbar nav li.kontakt a {
+    color: var(--primary-color);
+    border: 2.5px solid var(--primary-color);
+    font-weight: bold;
+    border-radius: 3em;
+    margin-top: -0.2em;
+    margin-right: 2em;
+  }
+  .navbar nav li.kontakt a:hover {
+    background: var(--primary-color);
+    color: white;
+  }
+  .section-tjänster {
+    padding: 0 2em;
+  }
+  .column-tj {
+    flex: 0 50%;
+    max-width: 50%;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 3em;
+    row-gap: 3em;
+    margin-top: 1em;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1em;
+    height: auto;
+    max-width: 1080px;
+    grid-template-areas: "text-ett text-ett bild-ett bild-ett" "bild-tva bild-tva text-tva text-tva";
+  }
+  #text-ett {
+    grid-area: text-ett;
+    border-radius: 3px;
+    background-color: #ffffff;
+    text-align: center;
+    align-items: center;
+    padding-top: 2em;
+    color: #002d4b;
+    padding: 3em;
+  }
+  #text-ett h3 {
+    color: #002d4b;
+    font-size: 2em;
+  }
+  #bild-ett {
+    grid-area: bild-ett;
+    border-radius: 3px;
+    background-image: url(/bilder/varmdo_1.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  #bild-tva {
+    grid-area: bild-tva;
+    border-radius: 3px;
+    background-image: url(/bilder/varmdo_2.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  #text-tva {
+    grid-area: text-tva;
+    border-radius: 3px;
+    background-color: #ffffff;
+    text-align: center;
+    align-items: center;
+    padding-top: 2em;
+    color: #002d4b;
+    padding: 3em;
+  }
+  #text-tva h3 {
+    color: #002d4b;
+    font-size: 2em;
+  }
+}
+@media only screen and (min-width: 1080px) {
+  .container {
+    width: 1080px;
+    margin: 0 auto;
+  }
+  section {
+    padding: 10em 4em;
+  }
+  .hero {
+    display: flex;
+    justify-content: space-between;
+  }
+  .hero h1 {
+    font-size: 3em;
+    max-width: 1080px;
+  }
+  .contact-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1fr);
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 2em;
+    max-width: 1080px;
+    grid-template-areas: "left-contact right-contact";
+  }
+  #left-contact {
+    grid-area: left-contact;
+  }
+  #right-contact {
+    grid-area: right-contact;
+  }
+  #left-contact a {
+    line-height: 2.5em;
+  }
+}/*# sourceMappingURL=main.css.map */

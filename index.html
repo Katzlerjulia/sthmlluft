@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stockholm Luftinstallation</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container">
+        <a class="logo" href="index.html">Stockholm<span>Luft</span></a>
+
+        <img
+          id="mobile-cta"
+          class="mobile-menu"
+          src="bilder/menu.png"
+          width="30"
+          height="30"
+          alt="Öppna meny"
+        />
+
+        <nav>
+          <img
+            id="mobile-exit"
+            class="mobile-menu-exit"
+            src="bilder/exit.png"
+            width="30"
+            height="30"
+            alt="Stäng meny"
+          />
+
+          <ul class="primary-nav">
+            <li class="current"><a href="index.html">Hem</a></li>
+            <li><a href="omoss.html">Om oss</a></li>
+            <li><a href="tjänster.html">Tjänster</a></li>
+          </ul>
+
+          <ul class="secondary-nav">
+            <li class="kontakt"><a href="kontakt.html">KONTAKT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <h1>
+       bättre inomhusklimat till företag och privatpersoner i hela
+        stockholm
+      </h1>
+    </section>
+
+    <section class="color-blue">
+      <article class="grid-container">
+        <div id="text-ett">
+          <h3>Renare, luftigare, bättre</h3>
+          <p>
+            Luft är något vi får i oss varje dag, dygnet runt. Dålig luft påverkar din hälsa och prestation negativt.
+            <br /> <br>
+            Vårt uppdrag är att säkerställa att luften du andas är utav bästa
+            kvalité och att du har en behaglig innertemperatur. <br />
+
+
+          </p>
+        </div>
+        <div id="bild-ett"></div>
+        <div id="bild-tva"></div>
+        <div id="text-tva">
+          <h3>Stort eller litet</h3>
+          <p>
+            Oavsett om du bor i en lägenhet, villa, jobbar på ett stort kontor
+            eller spelar padel med vännerna efter en lång arbetsdag förtjänar du
+            att andas den bästa luften. <br />
+            Vi på Stockholm Luft tar oss an projekt av olika storlekar och har
+            mycket erfarenhet av både mindre och större jobb. <br />
+            <br />
+            Se mer under <a href="tjänster.html">våra tjänster</a>.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <footer class="contact-section">
+      <div id="left-contact">
+        <h2>Info:</h2>
+        <ul>
+          <li>
+            <a href="tjänster.html">Gå till våra tjänster</a>
+          </li>
+          <li>
+            <a href="omoss.html">Läs mer om oss</a>
+          </li>
+          <li>
+            <a href="index.html">Gå till hemsidan</a>
+          </li>
+        </ul>
+      </div>
+      <div id="right-contact">
+        <h2>Kontakta oss:</h2>
+        <p>
+          <span>Email:</span>
+          <a href="mailto:jari@stockholmluft.se">jari@stockholmluft.se</a>
+        </p>
+        <p><span>Mobil:</span> <a href="tel:0704225250">070 422 52 50</a></p>
+        <p>©copyright 2022</p>
+      </div>
+    </footer>
+
+    <script>
+      const mobileBtn = document.getElementById("mobile-cta");
+      nav = document.querySelector("nav");
+      mobileBtnExit = document.getElementById("mobile-exit");
+
+      mobileBtn.addEventListener("click", () => {
+        nav.classList.add("menu-btn");
+      });
+
+      mobileBtnExit.addEventListener("click", () => {
+        nav.classList.remove("menu-btn");
+      });
+    </script>
+  </body>
+</html>
