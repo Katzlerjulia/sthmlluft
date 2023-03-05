@@ -1,85 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Stockholm Luftinstallation</title>
-    <link rel="stylesheet" href="main.css" />
-  </head>
-  <body>
-    <header class="navbar">
-      <div class="container">
-        <a class="logo" href="index.html">Stockholm<span>Luft</span></a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Stockholm Luftinstallation</title>
+        <link rel="stylesheet" href="main.css" />
+    </head>
+    <body>
+        <header class="navbar">
+            <div class="container">
+                <a class="logo" href="index.html">Stockholm<span>Luft</span></a>
 
-        <img
-          id="mobile-cta"
-          class="mobile-menu"
-          src="bilder/menu.png"
-          width="30"
-          height="30"
-          alt="Öppna meny"
-        />
+                <img
+                    id="mobile-cta"
+                    class="mobile-menu"
+                    src="bilder/menu.png"
+                    width="30"
+                    height="30"
+                    alt="Öppna meny"
+                />
 
-        <nav>
-          <img
-            id="mobile-exit"
-            class="mobile-menu-exit"
-            src="bilder/exit.png"
-            width="30"
-            height="30"
-            alt="Stäng meny"
-          />
+                <nav>
+                    <img
+                        id="mobile-exit"
+                        class="mobile-menu-exit"
+                        src="bilder/exit.png"
+                        width="30"
+                        height="30"
+                        alt="Stäng meny"
+                    />
 
-          <ul class="primary-nav">
-            <li><a href="index.html">Hem</a></li>
-            <li><a href="omoss.html">Om oss</a></li>
-            <li><a href="tjänster.html">Tjänster</a></li>
-          </ul>
+                    <ul class="primary-nav">
+                        <li><a href="index.html">Hem</a></li>
+                        <li><a href="omoss.html">Om oss</a></li>
+                        <li><a href="tjänster.html">Tjänster</a></li>
+                    </ul>
 
-          <ul class="secondary-nav">
-            <li class="current" class="kontakt">
-              <a href="kontakt.html">KONTAKT</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <section class="kontakta-oss">
-      <h1>Välkommen att kontakta oss!</h1>
-      <p>Hur kan vi hjälpa dig?</p>
-      <p>
-        Behöver du komma i kontakt med oss i förfrågan om jobb, offert eller
-        annat?
-      </p>
-      <p>
-
-         <div id="overlay">
-          <!--onsubmit="event.preventDefault(); validateForm()"-->
-        <form method="POST" action="action.php" >
-            <h1 class="h1contact">Kontakta Oss</h1>
-            <p class="p-contact"><br> Skriv nedan vad ditt ärende gäller. Vi återkommer så fort vi kan! För mer info om hur du kommer i kontakt med oss, vänligen scrolla längst ner. </p>
-
-            <label for="name">Namn:</label>
-            <input name="name" type="text" id="namn" placeholder="Ditt namn">
-            <small class="error"></small>
-
-            <label for="email">Email:</label>
-            <input name="email" type="text" id="email" placeholder="Din mailadress">
-            <small class="error"></small>
-
-            <label for="message">Meddelande:</label>
-            <textarea name="message" id="meddelande" placeholder="Ditt meddelande" rows="6"></textarea>
-            <small class="error"></small>
-
-            <div class="center">
-                <input type="submit" name="send" value="Skicka meddelande">
-                <p id="Skickat"></p>
+                    <ul class="secondary-nav">
+                        <li class="current" class="kontakt">
+                            <a href="kontakt.html">KONTAKT</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
+        </header>
 
-        </form>
-    </div>
-        <!--
+        <section class="kontakta-oss">
+            <h1>Välkommen att kontakta oss!</h1>
+            <p>Hur kan vi hjälpa dig?</p>
+            <p>
+                Behöver du komma i kontakt med oss i förfrågan om jobb, offert
+                eller annat?
+            </p>
+            <p></p>
+            <!--onsubmit="event.preventDefault(); validateForm()"
+            <div id="overlay">
+                <onsubmit="event.preventDefault(); validateForm()"
+                <form method="POST" action="process-form.php">
+                    <h1 class="h1contact">Kontakta Oss</h1>
+                    <p class="p-contact">
+                        <br />
+                        Skriv nedan vad ditt ärende gäller. Vi återkommer så
+                        fort vi kan! För mer info om hur du kommer i kontakt med
+                        oss, vänligen scrolla längst ner.
+                    </p>
+
+                    <label for="name">Namn:</label>
+                    <input
+                        name="name"
+                        type="text"
+                        id="namn"
+                        placeholder="Ditt namn"
+                    />
+                    <small class="error"></small>
+
+                    <label for="email">Email:</label>
+                    <input
+                        name="email"
+                        type="text"
+                        id="email"
+                        placeholder="Din mailadress"
+                    />
+                    <small class="error"></small>
+
+                    <label for="message">Meddelande:</label>
+                    <textarea
+                        name="message"
+                        id="meddelande"
+                        placeholder="Ditt meddelande"
+                        rows="6"
+                    ></textarea>
+                    <small class="error"></small>
+
+                    <div class="center">
+                        <input
+                            type="submit"
+                            name="send"
+                            value="Skicka meddelande"
+                        />
+                        <p id="Skickat"></p>
+                    </div>
+                </form>
+            </div>
+        -->
 
         Vi nås bäst på mail:
         <a href="mailto:jari@stockholmluft.se">jari@stockholmluft.se</a><br />
@@ -95,47 +118,52 @@
         Hittar du inte det du söker, tveka inte på att kontakta oss då jag är
         säker på att vi kan hitta en lösning.
       </p>
-      -->
-    </section>
 
-    <footer class="contact-section">
-      <div id="left-contact">
-        <h2>Info:</h2>
-        <ul>
-          <li>
-            <a href="tjänster.html">Gå till våra tjänster</a>
-          </li>
-          <li>
-            <a href="omoss.html">Läs mer om oss</a>
-          </li>
-          <li>
-            <a href="index.html">Gå till hemsidan</a>
-          </li>
-        </ul>
-      </div>
-      <div id="right-contact">
-        <h2>Kontakta oss:</h2>
-        <p>
-          <span>Email:</span>
-          <a href="mailto:jari@stockholmluft.se">jari@stockholmluft.se</a>
-        </p>
-        <p><span>Mobil:</span> <a href="tel:0704225250">070 422 52 50</a></p>
-        <p>©copyright 2022</p>
-      </div>
-    </footer>
-<script src="script.js"></script>
-    <script>
-      const mobileBtn = document.getElementById("mobile-cta");
-      nav = document.querySelector("nav");
-      mobileBtnExit = document.getElementById("mobile-exit");
+        </section>
 
-      mobileBtn.addEventListener("click", () => {
-        nav.classList.add("menu-btn");
-      });
+        <footer class="contact-section">
+            <div id="left-contact">
+                <h2>Info:</h2>
+                <ul>
+                    <li>
+                        <a href="tjänster.html">Gå till våra tjänster</a>
+                    </li>
+                    <li>
+                        <a href="omoss.html">Läs mer om oss</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Gå till hemsidan</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="right-contact">
+                <h2>Kontakta oss:</h2>
+                <p>
+                    <span>Email:</span>
+                    <a href="mailto:jari@stockholmluft.se"
+                        >jari@stockholmluft.se</a
+                    >
+                </p>
+                <p>
+                    <span>Mobil:</span>
+                    <a href="tel:0704225250">070 422 52 50</a>
+                </p>
+                <p>©copyright 2022</p>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+        <script>
+            const mobileBtn = document.getElementById('mobile-cta')
+            nav = document.querySelector('nav')
+            mobileBtnExit = document.getElementById('mobile-exit')
 
-      mobileBtnExit.addEventListener("click", () => {
-        nav.classList.remove("menu-btn");
-      });
-    </script>
-  </body>
+            mobileBtn.addEventListener('click', () => {
+                nav.classList.add('menu-btn')
+            })
+
+            mobileBtnExit.addEventListener('click', () => {
+                nav.classList.remove('menu-btn')
+            })
+        </script>
+    </body>
 </html>
