@@ -352,91 +352,9 @@ nav {
   background-color: #f7f7f7;
   color: #002d4b;
   text-align: center;
+  padding-top: 15em;
+  padding-bottom: 15em;
 }
-
-#overlay {
-  width: 100%;
-  height: 100%;
-  background-color: #f7f7f7;
-  margin-bottom: 200px;
-}
-
-form {
-  max-width: 550px;
-  width: 90%;
-  background: white;
-  margin: 17vh auto 0 auto;
-  padding: 40px;
-  border-radius: 3px;
-  box-sizing: border-box;
-}
-.h1contact {
-  margin: 0;
-  text-align: center;
-}
-
-.p-contact {
-  margin: 0;
-  text-align: center;
-}
-
-label {
-  display: block;
-  margin: 20px 0;
-}
-
-input,
-textarea {
-  width: 100%;
-  padding: 10px;
-  box-sizing: border-box;
-  outline: none;
-  resize: none;
-  border: none;
-  border-bottom: 1px solid #d4d1d1;
-}
-
-input[type="text"]:focus,
-textarea:focus {
-  border-bottom: 1px solid #002d4b;
-}
-
-textarea::-webkit-scrollbar {
-  width: 4px;
-}
-
-textarea::-webkit-scrollbar-thumb {
-  background-color: #002d4b;
-}
-
-.center {
-  text-align: center;
-}
-
-input[type="submit"] {
-  margin-top: 30px;
-  width: 90%;
-  max-width: 200px;
-  background: #002d4b;
-  color: white;
-  font-size: 17px;
-  cursor: pointer;
-  border-radius: 50px;
-}
-
-.error {
-  color: red;
-}
-
-.error-border {
-  border-bottom: 1px solid red;
-}
-
-#Skickat {
-  color: #002d4b;
-}
-
-
 
 // media query
 
@@ -536,7 +454,7 @@ input[type="submit"] {
   #bild-ett {
     grid-area: bild-ett;
     border-radius: 3px;
-    background-image: url(/bilder/varmdo_1.JPG);
+    background-image: url(bilder/varmdo_1.JPG);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -545,7 +463,7 @@ input[type="submit"] {
   #bild-tva {
     grid-area: bild-tva;
     border-radius: 3px;
-    background-image: url(/bilder/varmdo_2.JPG);
+    background-image: url(bilder/varmdo_2.JPG);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
