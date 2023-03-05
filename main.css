@@ -115,7 +115,7 @@ section {
 #bild-ett {
   grid-area: bild-ett;
   border-radius: 3px;
-  background-image: url(/bilder/varmdo_1.JPG);
+  background-image: url(bilder/varmdo_1.JPG);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -139,7 +139,7 @@ section {
 #bild-tva {
   grid-area: bild-tva;
   border-radius: 3px;
-  background-image: url(/bilder/varmdo_2.JPG);
+  background-image: url(bilder/varmdo_2.JPG);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -411,7 +411,7 @@ input[type=submit] {
 
 @media only screen and (min-width: 768px) {
   .mobile-menu,
-.mobile-menu-exit {
+  .mobile-menu-exit {
     display: none;
   }
   .navbar .container {
