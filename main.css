@@ -4,9 +4,14 @@
   --primary-color: red;
 }
 
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background: #ffffff;
-  margin: 0;
   font-family: "Roboto";
   overflow-x: hidden;
 }
@@ -61,16 +66,12 @@ section {
   padding-top: 10em;
 }
 .hero h1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: #ffffff;
   font-size: 2em;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   line-height: 1.8;
   font-weight: bold;
-  font-family: "Roboto";
   text-align: center;
   max-width: 90%;
   margin-left: auto;
@@ -102,7 +103,6 @@ section {
   background-color: #ffffff;
   font-size: 1em;
   text-align: center;
-  align-items: center;
   color: #002d4b;
   padding: 1em;
 }
@@ -126,7 +126,6 @@ section {
   border-radius: 5px;
   background-color: #ffffff;
   text-align: center;
-  align-items: center;
   color: #002d4b;
   padding: 1em;
 }
@@ -153,6 +152,7 @@ footer {
   background-color: white;
   color: #002d4b;
   margin-top: 3em;
+  padding-bottom: 1em;
 }
 footer a {
   line-height: 2em;
@@ -197,32 +197,22 @@ nav li a:hover {
   background-color: #f7f7f7;
   background-image: url(bilder/varmdo_1.JPG);
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-position: center;
   background-size: cover;
   color: #002d4b;
   text-align: center;
-  height: 55vh;
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  padding-bottom: 25em;
 }
 .omoss-section .wraparound {
-  flex-direction: column;
   background-color: #ffffff;
   margin: auto;
-  margin-bottom: 5em;
   padding: 3em;
-  max-width: 1080px;
+  max-width: 900px;
+  border-radius: 5px;
+  margin-top: 8em;
 }
 .omoss-section .omossbeskrivning {
   color: #002d4b;
   text-align: center;
-  max-width: 65%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   font-weight: 800;
 }
 
@@ -324,8 +314,8 @@ nav li a:hover {
   background-color: #f7f7f7;
   color: #002d4b;
   text-align: center;
-  padding-top: 15em;
-  padding-bottom: 15em;
+  padding-top: 5em;
+  padding-bottom: 5em;
 }
 
 @media only screen and (min-width: 768px) {
@@ -336,6 +326,13 @@ nav li a:hover {
   .navbar .container {
     display: grid;
     grid-template-columns: 180px auto;
+  }
+  .kontakta-oss {
+    background-color: #f7f7f7;
+    color: #002d4b;
+    text-align: center;
+    padding-top: 20em;
+    padding-bottom: 20em;
   }
   .navbar nav {
     display: flex;
@@ -399,15 +396,9 @@ nav li a:hover {
     grid-area: text-ett;
     border-radius: 3px;
     background-color: #ffffff;
-    text-align: center;
-    align-items: center;
     padding-top: 2em;
     color: #002d4b;
     padding: 3em;
-  }
-  #text-ett h3 {
-    color: #002d4b;
-    font-size: 2em;
   }
   #bild-ett {
     grid-area: bild-ett;
@@ -429,15 +420,32 @@ nav li a:hover {
     grid-area: text-tva;
     border-radius: 3px;
     background-color: #ffffff;
-    text-align: center;
-    align-items: center;
     padding-top: 2em;
     color: #002d4b;
     padding: 3em;
   }
-  #text-tva h3 {
+}
+@media only screen and (max-width: 500px) {
+  .omoss-section {
+    background-color: #f7f7f7;
+    background-image: url(bilder/varmdo_1.JPG);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
     color: #002d4b;
-    font-size: 2em;
+    text-align: center;
+    height: auto;
+  }
+  .omoss-section .wraparound {
+    background-color: #ffffff;
+    margin: auto;
+    border-radius: 5px;
+  }
+  .omoss-section .omossbeskrivning {
+    color: #002d4b;
+    text-align: center;
+    font-weight: 800;
   }
 }
 @media only screen and (min-width: 1080px) {
@@ -462,7 +470,6 @@ nav li a:hover {
     grid-template-rows: repeat(1fr);
     margin-right: auto;
     margin-left: auto;
-    padding-bottom: 2em;
     max-width: 1080px;
     grid-template-areas: "left-contact right-contact";
   }
