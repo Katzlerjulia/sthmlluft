@@ -1,4 +1,4 @@
-// get data
+/*// get data
 const nameInput = document.querySelector("#namn");
 const email = document.querySelector("#email");
 const message = document.querySelector("#meddelande");
@@ -49,3 +49,4 @@ function emailIsValid(email) {
   let pattern = /\S+@\S+\.\S+/;
   return pattern.test(email);
 }
+*/

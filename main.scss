@@ -61,7 +61,7 @@ section {
 
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(bilder/IMG_2665.jpg);
+     url(https://www.stockholmluft.se/bilder/IMG_2665.jpg);
   background-repeat: no-repeat;
   background-attachment: local;
   background-position: center;
@@ -123,7 +123,7 @@ section {
 #bild-ett {
   grid-area: bild-ett;
   border-radius: 3px;
-  background-image: url(bilder/varmdo_1.JPG);
+  background-image: url(https://www.stockholmluft.se/bilder/varmdo_1.JPG);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -146,7 +146,7 @@ section {
 #bild-tva {
   grid-area: bild-tva;
   border-radius: 3px;
-  background-image: url(bilder/varmdo_2.JPG);
+  background-image: url(https://www.stockholmluft.se/bilder/varmdo_2.JPG);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -210,7 +210,7 @@ nav {
 
 .omoss-section {
     background-color: #f7f7f7;
-    background-image: url(bilder/varmdo_1.JPG);
+    background-image: url(https://www.stockholmluft.se/bilder/varmdo_1.JPG);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -449,7 +449,7 @@ nav {
   #bild-ett {
     grid-area: bild-ett;
     border-radius: 3px;
-    background-image: url(bilder/varmdo_1.JPG);
+    background-image: url(https://www.stockholmluft.se/bilder/varmdo_1.JPG);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -458,7 +458,7 @@ nav {
   #bild-tva {
     grid-area: bild-tva;
     border-radius: 3px;
-    background-image: url(bilder/varmdo_2.JPG);
+    background-image: url(https://www.stockholmluft.se/bilder/varmdo_2.JPG);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -480,7 +480,7 @@ nav {
 @media only screen and (max-width: 500px) {
     .omoss-section {
         background-color: #f7f7f7;
-        background-image: url(bilder/varmdo_1.JPG);
+        background-image: url(https://www.stockholmluft.se/bilder/varmdo_1.JPG);
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: center;
